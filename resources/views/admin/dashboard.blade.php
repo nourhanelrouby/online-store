@@ -126,7 +126,7 @@
                         label: 'Orders',
                         data: [
                             {{ \App\Models\Order::where('status', 'pending')->count() }},
-                            {{ \App\Models\Order::where('status', 'canceled')->count() }},
+                            {{ \App\Models\Order::where('status', 'cancel')->count() }},
                             {{ \App\Models\Order::where('status', 'done')->count() }}
                         ],
                         backgroundColor: ['#f39c12', '#e74c3c', '#2ecc71']

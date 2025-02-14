@@ -19,7 +19,7 @@
                 <!-- Content -->
                 <tr>
                     <td style="padding: 20px;">
-                        <h2 style="color: #333;">Thank You for Subscribing, {{ $subscribe->email }}!</h2>
+                        <h2 style="color: #333;">Thank You for Subscribing, {{ $subscribe }}!</h2>
                         <p style="color: #555; font-size: 16px;">We're excited to have you as part of the By3nalk community. Stay tuned for updates, exclusive content, and special offers.</p>
                         <p style="color: #555; font-size: 16px;">If you have any questions, feel free to contact us.</p>
                     </td>

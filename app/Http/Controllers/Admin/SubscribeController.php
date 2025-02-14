@@ -20,6 +20,8 @@ class SubscribeController extends Controller
     }
     public function sendMail($subscribe)
     {
-        Mail::to($subscribe->email)->queue(new SubscribeMail($subscribe));
+
+        Mail::to($subscribe)->send(new SubscribeMail($subscribe));
+        return back()->with('success', 'Mail Sent Successfully!');
     }
 }

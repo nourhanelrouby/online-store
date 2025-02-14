@@ -35,7 +35,7 @@ class SubscribeMail extends Mailable
     public function content(): Content
     {
         return new Content(
-            view: 'emails.subscribe',
+            view: 'admin.emails.subscribe',
             with: ['subscribe' => $this->subscribe],
         );
     }

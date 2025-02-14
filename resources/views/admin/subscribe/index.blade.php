@@ -18,7 +18,7 @@
                 <td>{{ $index++ }}</td>
                 <td>{{ $subscribe->email }}</td>
                 <td>
-                    <form action="{{ route('admin.subscribes.sendMail',$subscribe) }}" method="POST">
+                    <form action="{{ route('admin.subscribes.sendMail',$subscribe->email) }}" method="POST">
                         @csrf
                         <button type="submit" class="btn btn-primary" style="background-color: #3B5890; border-color: #3B5890; padding: 10px 20px; font-size: 16px; border-radius: 5px;">
                             <i class="fas fa-paper-plane"></i> Send
